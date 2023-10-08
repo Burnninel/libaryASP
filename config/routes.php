@@ -12,11 +12,12 @@
 $commonRoutes = array(
 	'/'         => 'HomeController/index',
 	'client'    => 'ClientController/index',
-	
 );
 
 // rotas POST
-$commonPost = array();
+$commonPost = array(
+	'apiClient' => 'ClientController/apiClient',
+);
 
 $commonRoutes = array_merge($commonRoutes, $commonPost);
 
