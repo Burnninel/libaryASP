@@ -1,0 +1,79 @@
+#containerLogo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100%;
+    width: 50%;
+    background-color: #e70c0cc5;
+}
+
+#logoAsp {
+    height: 80px;
+    width: 240px;
+    margin-bottom: 30px;
+    user-select: none;
+    animation: blurLogo 1s ease-in;
+}
+
+@keyframes blurLogo {
+    0% {
+        filter: blur(12px);
+    }
+    100% {
+        filter: blur(0px);
+    }
+}
+
+#slogan {
+    display: block;
+    text-align: end;
+    align-items: center;
+    justify-content: space-between;
+    user-select: none;
+    padding-right: 22px;
+}
+
+.textSlogan {
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    height: 42px;
+    font-size: 40px;
+    font-weight: 700;
+    align-items: center;
+    font-family: 'Bebas Neue', sans-serif;
+}
+
+.highlightColor {
+    color: #fff;
+}
+
+.animateText {
+    animation: turn 3s ease infinite;
+    -webkit-animation: turn 4s ease infinite;
+    margin: 0 8px;
+}
+
+.turnTextSecond {
+    animation: turn 3s ease infinite;
+    -webkit-animation: turn 4s ease infinite;
+    animation-delay: 1s; 
+    margin: 0 8px;
+}
+
+.turnTextThird {
+    animation: turn 3s ease infinite;
+    -webkit-animation: turn 4s ease infinite;
+    animation-delay: 2s; 
+    margin-left: 8px;
+}
+
+@keyframes turn {
+    0% {
+        transform: rotateX(0deg);
+    }
+    100% {
+        transform: rotateX(360deg);
+    }
+}
