@@ -20,19 +20,17 @@
 
 <body>
 
-	<main id="main">
+	<main id="mainDashboard">
 		
 		<thead id="">
 
 		</thead>
 
 		<div id="cardGroup">
-		
+
 		</div>
 
 	</main>
-
-	
 
 	<script>
 		var PATH = '<?php echo $url; ?>';
