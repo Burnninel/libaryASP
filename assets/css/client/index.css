@@ -72,7 +72,7 @@ main {
     text-transform: uppercase;
 }
 
-#menuVisualMedia {
+#clientDashboard {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -81,7 +81,7 @@ main {
     padding: 24px;
 }
 
-.itemMenu {
+.itemDashboard {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -95,7 +95,7 @@ main {
     transition: 0.4s ease-in;
 }
 
-.itemMenu:hover {
+.itemDashboard:hover {
     background-color: #e70c0cc5;
     color: #fff;
     border: none;

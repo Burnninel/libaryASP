@@ -10,8 +10,10 @@
 
 // rotas normais
 $commonRoutes = array(
-	'/'         => 'HomeController/index',
-	'client'    => 'ClientController/index',
+	'/'                  => 'HomeController/index',
+	'client'             => 'ClientController/index',
+	'client/dashboard'   => 'ClientController/dashboard',
+	'support'   => 'SupportController/index',
 );
 
 // rotas POST

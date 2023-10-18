@@ -18,6 +18,7 @@ $paths = array(
   'controllers',
   'controllers/site/home',
   'controllers/site/client',
+  'controllers/site/support',
   'helpers',
   'models',
   'models/db',

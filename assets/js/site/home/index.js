@@ -5,3 +5,11 @@ function client() {
 }
 
 client()
+
+function support() {
+    $('#support').click(function() {
+        window.location.href = "http://localhost/libaryASP/support";
+    })
+}
+
+support();

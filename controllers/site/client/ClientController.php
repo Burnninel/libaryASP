@@ -44,4 +44,11 @@ class ClientController extends Controller
 
 		echo json_encode($clients, JSON_PRETTY_PRINT);
 	}
+
+	public function dashboard()
+	{
+
+		$this->view('site/client/dashboard.php');
+		
+	}
 }
