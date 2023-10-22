@@ -8,7 +8,7 @@
 *
 **/
 
-define('LOCAL_URL', '/libaryASP');
+define('LOCAL_URL', 'https://libaryasp-production.up.railway.app/');
 
 if($env == "prod"){
 	define('LOCAL_URL', 'https://libaryasp-production.up.railway.app/');
