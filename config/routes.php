@@ -11,7 +11,7 @@
 // rotas normais
 $commonRoutes = array(
 	'https://libaryasp-production.up.railway.app/'                     => 'HomeController/index',
-	'client'                => 'ClientController/index',
+	'https://libaryasp-production.up.railway.app/client'                => 'ClientController/index',
 	'client/cadastros'      => 'ClientController/index',
 	'client/financeiro'     => 'ClientController/index',
 	'client/fiscal'         => 'ClientController/index',
