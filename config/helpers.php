@@ -11,7 +11,7 @@
 define('LOCAL_URL', '/libaryASP');
 
 if($env == "prod"){
-	define('LOCAL_URL', 'https://www.google.com.br/');
+	define('LOCAL_URL', 'https://libaryasp-production.up.railway.app/');
 }
 
 return array(
