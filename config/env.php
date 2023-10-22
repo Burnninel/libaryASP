@@ -13,7 +13,7 @@
 * Verificação do ambiente atual
 *
 **/
-$env = 'dev';
+$env = 'prod';
 
 if(!empty($_SERVER['SERVER_NAME']) and $_SERVER['SERVER_NAME'] === 'localhost'  or $_SERVER['SERVER_NAME'] === '192.168.0.148'){
   $env = 'dev';
@@ -24,7 +24,7 @@ if(!empty($_SERVER['SERVER_NAME']) and $_SERVER['SERVER_NAME'] === 'localhost'  
 * Controle do erro reporting de acordo com o ambiente.
 *
 **/
-$error = true;
+$error = false;
 
 if($env == 'prod'){
 	$error = false;
