@@ -13,7 +13,7 @@
 * Verificação do ambiente atual
 *
 **/
-$env = 'prod';
+$env = 'dev';
 
 if(!empty($_SERVER['SERVER_NAME']) and $_SERVER['SERVER_NAME'] === 'localhost'  or $_SERVER['SERVER_NAME'] === '192.168.0.148'){
   $env = 'dev';
