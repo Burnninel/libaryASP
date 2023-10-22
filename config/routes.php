@@ -22,7 +22,8 @@ $commonRoutes = array(
 
 // rotas POST
 $commonPost = array(
-	'apiClient' => 'ClientController/apiClient',
+	'apiClient'  => 'ClientController/apiClient',
+	'apiSupport' => 'SupportController/apiSupport',
 );
 
 $commonRoutes = array_merge($commonRoutes, $commonPost);
