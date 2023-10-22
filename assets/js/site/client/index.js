@@ -36,17 +36,23 @@ function listItemGenerator(data, menu) {
 function attachMenuHandlers(data) {
 	$('#cadastros, #financeiro, #fiscal, #contabilidade').click(function () {
 		let elementID = $(this).attr('id');
+		let dynamicRoute = `http://localhost/libaryASP/client/${elementID}`;
+
+		let state = { elementID: elementID, route: dynamicRoute };
 
 		videoDashboardGenerator(elementID);
 		listItemGenerator(data, elementID);
+		$('#cardGroup').hide();
 
-		$('#cardGroup').hide()
-		
-		// window.location.href = 'http://localhost/libaryASP/client/dashboard';
+		window.history.pushState(state, elementID, dynamicRoute);
+	});
 
+	$(window).on('popstate', function (event) {
+		if (!event.state || !event.state.route || event.state.route === "http://localhost/libaryASP/client") {
+			location.reload();
+		};
 	});
 };
-
 
 function fetchAndInitialize() {
 	$.ajax({
@@ -54,7 +60,7 @@ function fetchAndInitialize() {
 		type: 'GET',
 		dataType: 'json',
 		success: function (data) {
-			generatorMenu(data)
+			generatorMenu(data);
 			attachMenuHandlers(data);
 		},
 		error: function (error) {
@@ -64,6 +70,3 @@ function fetchAndInitialize() {
 };
 
 fetchAndInitialize();
-
-
-

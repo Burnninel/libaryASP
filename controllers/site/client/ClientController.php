@@ -48,7 +48,7 @@ class ClientController extends Controller
 	public function dashboard()
 	{
 
-		$this->view('site/client/dashboard.php');
+		$this->view('site/client/index.php');
 		
 	}
 }
