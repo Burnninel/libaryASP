@@ -1,5 +1,4 @@
 function generatorMenu(data) {
-
 	for (let item in data) {
 		var itemMenu = `
 		  <div class="card" id="${item}">
@@ -12,7 +11,6 @@ function generatorMenu(data) {
 
 		$('#cardGroup').append(itemMenu);
 	};
-
 };
 
 function videoDashboardGenerator(titleDashboard) {
@@ -70,5 +68,3 @@ function fetchAndInitialize() {
 };
 
 fetchAndInitialize();
-
-console.log('ola')
