@@ -29,11 +29,11 @@ class ClientController extends Controller
 				array("id" => "estornoFinanc",  "name" => "Estornar conta a receber/pagar"),
 			),
 			"fiscal" => array(
-				array("id" => "nfSaida",        "name" => "Nota saida"),
+				array("id" => "nfSaida",        "name" => "Nota  de saída"),
 				array("id" => "nfEntrada",      "name" => "Nota de entrada"),
-				array("id" => "devForcedor",    "name" => "Nota de devolução fornecedor"),
-				array("id" => "devCupom",       "name" => "Nota de devolução cupom"),
-				array("id" => "devNfc",         "name" => "Nota de devolução NFC-e"),
+				array("id" => "devCupom",       "name" => "Devolução cupom"),
+				array("id" => "devNfc",         "name" => "Devolução NFC-e"),
+				array("id" => "devForcedor",    "name" => "Devolução fornecedor"),
 				array("id" => "contranota",     "name" => "Nota de contrapartida"),
 			),
 			"contabilidade" => array(
