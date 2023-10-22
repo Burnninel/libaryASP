@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f8f8f8;
+    height: 100vh;
+    width: 100%;
+}
+
+#cardGroup {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+}
+
+.card {
+    width: 200px;
+    padding: 20px;
+    margin: 0px 16px;
+    background-color: #fff;
+    color: #000;
+    box-shadow: 0 0 8px 0 #cac4c4;
+    border: none;
+    cursor: pointer;
+    transition: 0.4s ease-in-out;
+}
+
+.card:hover {
+    transform: translateY(-6px);
+    background-color: #e70c0cc5;
+    color: #fff;
+}
+
+.iconCard{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.icon {
+    height: 60px;
+}
+
+.titleCard {
+    font-family: 'Bebas Neue', sans-serif;
+    text-align: center;
+    margin-top: 16px;
+    font-size: 30px;
+}
+
+#visualMedia {
+    width: 680px;
+    background-color: #fff;
+    box-shadow: 0 0 8px 0 #cac4c4;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+#headearClientDashboard {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Bebas Neue', sans-serif;
+    height: 95px;
+    width: 100%;
+    font-size: 42px;
+    color: #fff;
+    background-color: #e70c0cc5;
+    text-transform: uppercase;
+}
+
+#clientDashboard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 24px;
+}
+
+.itemDashboard {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 320px;
+    height: 40px;
+    margin: 4px;
+    box-shadow: 0 0 2px 0 #cac4c4;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.4s ease-in;
+}
+
+.itemDashboard:hover {
+    background-color: #e70c0cc5;
+    color: #fff;
+    border: none;
+    transform: translateY(-2px);
+}
