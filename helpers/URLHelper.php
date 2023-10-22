@@ -30,7 +30,7 @@ class URLHelper
 	public function getLocation()
 	{
 		
-		$url = $_SERVER['https://libaryasp-production.up.railway.app/'];
+		$url = $_SERVER['REQUEST_URI'];
 
 		$path = LOCAL_URL;
 

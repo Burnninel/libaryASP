@@ -36,7 +36,8 @@ function listItemGenerator(data, menu) {
 function attachMenuHandlers(data) {
 	$('#cadastros, #financeiro, #fiscal, #contabilidade').click(function () {
 		let elementID = $(this).attr('id');
-		let dynamicRoute = `https://libaryasp-production.up.railway.app/client/${elementID}`;
+		let dynamicRoute = `http://localhost/libaryASP/client/${elementID}`;
+		// let dynamicRoute = `https://libaryasp-production.up.railway.app/client/${elementID}`;
 
 		let state = { elementID: elementID, route: dynamicRoute };
 
@@ -48,7 +49,8 @@ function attachMenuHandlers(data) {
 	});
 
 	$(window).on('popstate', function (event) {
-		if (!event.state || !event.state.route || event.state.route === "https://libaryasp-production.up.railway.app/client") {
+		// if (!event.state || !event.state.route || event.state.route === "https://libaryasp-production.up.railway.app/client") {
+		if (!event.state || !event.state.route || event.state.route === "http://localhost/libaryASP/client") {
 			location.reload();
 		};
 	});
@@ -56,7 +58,8 @@ function attachMenuHandlers(data) {
 
 function fetchAndInitialize() {
 	$.ajax({
-		url: 'hhttps://libaryasp-production.up.railway.app/apiClient',
+		url: 'http://localhost/libaryASP/apiClient',
+		// url: 'hhttps://libaryasp-production.up.railway.app/apiClient',
 		type: 'GET',
 		dataType: 'json',
 		success: function (data) {
