@@ -26,7 +26,7 @@ $commonRoutes = array(
 
 // rotas POST
 $commonPost = array(
-	'apiClient'  => 'ClientController/apiClient',
+	'https://libaryasp-production.up.railway.app/apiClient'  => 'ClientController/apiClient',
 	'apiSupport' => 'SupportController/apiSupport',
 );
 
