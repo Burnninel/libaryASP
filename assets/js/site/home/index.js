@@ -1,6 +1,6 @@
 function redirectToClientPage() {
     $('#client').click(function() {
-        window.location.href = "/client";
+        window.location.href = "https://libaryasp-production.up.railway.app/client";
     });
 }
 

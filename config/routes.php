@@ -11,7 +11,7 @@
 // rotas normais
 $commonRoutes = array(
 	'/'                     => 'HomeController/index',
-	'client'                => 'ClientController/index',
+	'/client'                => 'ClientController/index',
 	'client/cadastros'      => 'ClientController/index',
 	'client/financeiro'     => 'ClientController/index',
 	'client/fiscal'         => 'ClientController/index',
