@@ -1,6 +1,7 @@
 function redirectToClientPage() {
     $('#client').click(function() {
-        window.location.href = "https://libaryasp-production.up.railway.app/client";
+        window.location.href = "https://libaryasp.000webhostapp.com/client";
+        // window.location.href = "https://libaryasp-production.up.railway.app/client";
     });
 }
 
@@ -53,7 +54,7 @@ function handleSupportSubmit() {
             handlePasswordInputKeyUp(password);
         } else {
             password.val('');
-            window.location.href = "https://libaryasp-production.up.railway.app/support";
+            window.location.href = "https://libaryasp.000webhostapp.com/support";
         };
     });
 };
