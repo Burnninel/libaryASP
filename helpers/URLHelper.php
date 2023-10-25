@@ -13,7 +13,7 @@ class URLHelper
 	public function getURL($file = null)
 	{
 
-		$url = (ENV === 'prod') ? LOCAL_URL : 'https://libaryasp-production.up.railway.app/';
+		$url = (ENV === 'dev') ? LOCAL_URL : '/';
 		$url = rtrim($url, '/');
 
 		if(is_null($file)){
@@ -34,12 +34,12 @@ class URLHelper
 
 		$path = LOCAL_URL;
 
-		if(ENV !== 'local' || ENV !== 'prod'){
+		// if(ENV !== 'local' || ENV !== 'prod'){
 
-			$url = str_replace(array($path, "/"), "", $url);
+		// 	$url = str_replace(array($path, "/"), "", $url);
 
 
-		}	
+		// }	
 
 		$url = ltrim($url, '/');
 

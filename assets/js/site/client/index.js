@@ -36,8 +36,7 @@ function listItemGenerator(data, menu) {
 function attachMenuHandlers(data) {
 	$('#cadastros, #financeiro, #fiscal, #contabilidade').click(function () {
 		let elementID = $(this).attr('id');
-		let dynamicRoute = `https://libaryasp.000webhostapp.com/client/${elementID}`;
-		// let dynamicRoute = `http://localhost/libaryASP/client/${elementID}`;
+		let dynamicRoute = `http://localhost/libaryASP/client/${elementID}`;
 
 		let state = { elementID: elementID, route: dynamicRoute };
 
@@ -49,8 +48,7 @@ function attachMenuHandlers(data) {
 	});
 
 	$(window).on('popstate', function (event) {
-		// if (!event.state || !event.state.route || event.state.route === "http://localhost/libaryASP/client") {
-		if (!event.state || !event.state.route || event.state.route === "https://libaryasp.000webhostapp.com/client") {
+		if (!event.state || !event.state.route || event.state.route === "http://localhost/libaryASP/client") {
 			location.reload();
 		};
 	});
@@ -58,8 +56,7 @@ function attachMenuHandlers(data) {
 
 function fetchAndInitialize() {
 	$.ajax({
-		url: 'https://libaryasp.000webhostapp.com/apiClient',
-		// url: 'http://localhost/libaryASP/apiClient',
+		url: 'http://localhost/libaryASP/apiClient',
 		type: 'GET',
 		dataType: 'json',
 		success: function (data) {

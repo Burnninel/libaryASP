@@ -34,8 +34,7 @@ function listItemGenerator(data, menu) {
 function attachMenuHandlers(data) {
 	$('#gestao, #caixa, #loja, #extras').click(function () {
 		let elementID = $(this).attr('id');
-		let dynamicRoute = `https://libaryasp.000webhostapp.com/support/${elementID}`;
-		// let dynamicRoute = `http://localhost/libaryASP/support/${elementID}`;
+		let dynamicRoute = `http://localhost/libaryASP/support/${elementID}`;
 
 		let state = { elementID: elementID, route: dynamicRoute };
 
@@ -47,8 +46,7 @@ function attachMenuHandlers(data) {
 	});
 
 	$(window).on('popstate', function (event) {
-		// if (!event.state || !event.state.route || event.state.route === "http://localhost/libaryASP/client") {
-		if (!event.state || !event.state.route || event.state.route === "https://libaryasp.000webhostapp.com/support") {
+		if (!event.state || !event.state.route || event.state.route === "http://localhost/libaryASP/client") {
 			location.reload();
 		};
 	});
@@ -56,8 +54,7 @@ function attachMenuHandlers(data) {
 
 function fetchAndInitialize() {
 	$.ajax({
-		// url: 'http://localhost/libaryASP/apiSupport',
-		url: 'https://libaryasp.000webhostapp.com/apiSupport',
+		url: 'http://localhost/libaryASP/apiSupport',
 		type: 'GET',
 		dataType: 'json',
 		success: function (data) {
