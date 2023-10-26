@@ -16,3 +16,31 @@
     background-color: #e70c0cc5;
     color: #fff;
 }
+
+@media screen and (max-width: 700px) {
+
+    #main {
+        flex-direction: column;
+    }
+
+    #containerLogo {
+        height: 20%;
+        width: 100%;
+    }
+
+    #logoAsp {
+        height: 60px;
+        width: 180px;
+        margin-bottom: 0;
+    }
+
+    #slogan {
+        display: none;
+    }
+
+    #containerTemplate {
+        width: 100%;
+        background-color: #e70c0cc5;
+    }
+
+}
