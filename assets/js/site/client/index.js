@@ -2,7 +2,7 @@ function generatorMenu(data) {
 
 	for (let item in data) {
 		var itemMenu = `
-		  <div class="card" id="${item}">
+		  <div class="card col-lg-2 col-md-3 col-sm-6" id="${item}">
 			<div class="iconCard">
 			  ${getIcon(item)}
 			</div>
@@ -42,7 +42,7 @@ function attachMenuHandlers(data) {
 
 		videoDashboardGenerator(elementID);
 		listItemGenerator(data, elementID);
-		$('#cardGroup').hide();
+		$('#containerCardGroup').hide();
 
 		window.history.pushState(state, elementID, dynamicRoute);
 	});

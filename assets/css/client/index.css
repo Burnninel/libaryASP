@@ -19,7 +19,7 @@ main {
 .card {
     width: 200px;
     padding: 20px;
-    margin: 0px 16px;
+    margin: 10px 16px;
     background-color: #fff;
     color: #000;
     box-shadow: 0 0 8px 0 #cac4c4;
@@ -49,6 +49,22 @@ main {
     text-align: center;
     margin-top: 16px;
     font-size: 30px;
+}
+
+@media screen and (max-width: 900px) {
+    .card {
+        width: 160px;
+    }
+
+    .icon {
+        height: 48px;
+    } 
+
+    .titleCard {
+        margin-top: 12px;
+        font-size: 22px;
+    }
+
 }
 
 #visualMedia {

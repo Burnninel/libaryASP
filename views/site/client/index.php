@@ -26,13 +26,11 @@
 
 		</thead>
 
-		<div id="cardGroup">
-		
+		<div class="container" id="containerCardGroup">
+			<div class="row" id="cardGroup"></div>
 		</div>
 
 	</main>
-
-	
 
 	<script>
 		var PATH = '<?php echo $url; ?>';
