@@ -23,7 +23,7 @@ redirectComeBack();
 function generatorMenu(data) {
 
 	for (let item in data) {
-		var itemMenu = `
+		let itemMenu = `
 		  <div class="card col-lg-2 col-md-3 col-sm-6" id="${item}">
 			<div class="iconCard">
 			  ${getIcon(item)}
@@ -38,7 +38,7 @@ function generatorMenu(data) {
 };
 
 function videoDashboardGenerator(titleDashboard) {
-	const visualMedia = `
+	let visualMedia = `
 		<div id="visualMedia">
 			<div id="headearClientDashboard">${titleDashboard}</div>
 			<div id="clientDashboard"></div>
@@ -55,6 +55,19 @@ function listItemGenerator(data, menu) {
 	};
 };
 
+function addVideoPlayer() {
+	$('.itemDashboard').click(function() {
+		let itemVideo = $(this).attr('id');
+		let videoElement = `
+			<video width="480" height="240" controls>
+            	<source src="${PATH}/assets/video/${itemVideo}.mp4" type="video/mp4">
+            </video>
+		`;
+
+        $("#clientDashboard").html(videoElement);
+	});
+};
+
 function attachMenuHandlers(data) {
 	$('#cadastros, #financeiro, #fiscal, #contabilidade').click(function () {
 		let elementID = $(this).attr('id');
@@ -67,6 +80,8 @@ function attachMenuHandlers(data) {
 		$('#containerCardGroup').hide();
 
 		window.history.pushState(state, elementID, dynamicRoute);
+
+		addVideoPlayer();
 	});
 
 	$(window).on('popstate', function (event) {
