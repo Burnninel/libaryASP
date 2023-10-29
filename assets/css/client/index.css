@@ -66,3 +66,28 @@ main {
     }
 
 }
+
+#comeBack {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 42px;
+    left: 48px;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    box-shadow: 0 0 6px 0 #cac4c4;
+    cursor: pointer;
+    transition: all 0.4s;
+    background-color: #fff;
+}
+
+#comeBack:hover {
+    transform: scale(1.1);
+}
+
+#iconComeBack {
+    height: 20px;
+    width: 20px;
+}
