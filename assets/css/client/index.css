@@ -68,6 +68,10 @@ main {
 }
 
 #visualMedia {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     width: 680px;
     background-color: #fff;
     box-shadow: 0 0 8px 0 #cac4c4;
@@ -79,22 +83,27 @@ main {
     display: flex;
     align-items: center;
     justify-content: center;
-    font-family: 'Bebas Neue', sans-serif;
     height: 95px;
     width: 100%;
     font-size: 42px;
+    text-transform: uppercase;
+    font-family: 'Bebas Neue', sans-serif;
     color: #fff;
     background-color: #e70c0cc5;
-    text-transform: uppercase;
 }
 
 #clientDashboard {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    width: 100%;
-    padding: 24px;
+    width: 60%;
+    margin: 24px 0px;
+    height: 200px;
+    overflow-y: auto;
+}
+
+#clientDashboard::-webkit-scrollbar {
+    background-color: transparent;
 }
 
 .itemDashboard {
@@ -102,8 +111,8 @@ main {
     justify-content: center;
     align-items: center;
     text-align: center;
-    width: 320px;
-    height: 40px;
+    width: 380px;
+    min-height: 40px;
     margin: 4px;
     box-shadow: 0 0 2px 0 #cac4c4;
     border-radius: 6px;
