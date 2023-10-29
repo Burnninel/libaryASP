@@ -7,10 +7,18 @@ function createBtnComeBack() {
 		</div>
 	`;
 
-	$('main').append(elementComeBack)
+	$('main').append(elementComeBack);
 };
 
 createBtnComeBack();
+
+function redirectComeBack() {
+	$('#comeBack').click(function() {
+		window.location.href = 'http://localhost/libaryASP/';
+	});
+};
+
+redirectComeBack();
 
 function generatorMenu(data) {
 
