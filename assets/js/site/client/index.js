@@ -58,20 +58,27 @@ function listItemGenerator(data, menu) {
 function addVideoPlayer() {
 	$('.itemDashboard').click(function() {
 		let itemVideo = $(this).attr('id');
-		let videoElement = `
-			<video width="480" height="240" controls>
-            	<source src="${PATH}/assets/video/${itemVideo}.mp4" type="video/mp4">
-            </video>
-		`;
+		// let videoElement = `
+		// 	<video src="${PATH}/assets/video/${itemVideo}.mp4" 
+		// 		   type="video/mp4" width="480" height="240" 
+		// 		   controls>
+		// 	</video>
+		// `;
 
-        $("#clientDashboard").html(videoElement);
+		console.log(itemVideo)
+
+		videoPlayer(itemVideo, "#clientDashboard");
+
+		configVideoPlayer();
+
+        // $("#clientDashboard").html(videoElement);
 	});
 };
 
 function attachMenuHandlers(data) {
 	$('#cadastros, #financeiro, #fiscal, #contabilidade').click(function () {
 		let elementID = $(this).attr('id');
-		let dynamicRoute = `http://localhost/libaryASP/client/${elementID}`;
+		// let dynamicRoute = `http://localhost/libaryASP/client/${elementID}`;
 
 		let state = { elementID: elementID, route: dynamicRoute };
 
@@ -79,16 +86,16 @@ function attachMenuHandlers(data) {
 		listItemGenerator(data, elementID);
 		$('#containerCardGroup').hide();
 
-		window.history.pushState(state, elementID, dynamicRoute);
+		// window.history.pushState(state, elementID, dynamicRoute);
 
 		addVideoPlayer();
 	});
 
-	$(window).on('popstate', function (event) {
-		if (!event.state || !event.state.route || event.state.route === "http://localhost/libaryASP/client") {
-			location.reload();
-		};
-	});
+	// $(window).on('popstate', function (event) {
+	// 	if (!event.state || !event.state.route || event.state.route === "http://localhost/libaryASP/client") {
+	// 		location.reload();
+	// 	};
+	// });
 };
 
 function fetchAndInitialize() {

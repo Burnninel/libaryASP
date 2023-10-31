@@ -12,11 +12,9 @@
 $commonRoutes = array(
 	'/'                     => 'HomeController/index',
 	'client'                => 'ClientController/index',
-	'client/cadastros'      => 'ClientController/index',
-	'client/financeiro'     => 'ClientController/index',
-	'client/fiscal'         => 'ClientController/index',
-	'client/contabilidade'  => 'ClientController/index',
+	'client/videos'         => 'ClientController/videos',
 	
+
 	'support'               => 'SupportController/index',
 	'support/gestao'        => 'SupportController/index',
 	'support/caixa'         => 'SupportController/index',

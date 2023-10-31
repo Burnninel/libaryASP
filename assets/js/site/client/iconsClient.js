@@ -36,3 +36,16 @@ function getIcon(item) {
         return "";
     }
 }
+
+function handleMenu() {
+
+  $('.card').click(function() {
+    let element = $(this).attr('id')
+
+    window.location.href = `http://localhost/libaryASP/client/videos/${element}`;
+    
+  })
+
+}
+
+handleMenu()

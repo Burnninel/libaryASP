@@ -14,6 +14,7 @@
 
 	<link rel="stylesheet" href="<?php echo $url; ?>/assets/css/client/index.css">
 	<link rel="stylesheet" href="<?php echo $url; ?>/assets/css/client/dashboard.css">
+	<link rel="stylesheet" href="<?php echo $url; ?>/assets/css/client/videoPlayer.css">
 
 	<title>ASP Softwares</title>
 
@@ -24,8 +25,22 @@
 	<main id="main">
 
 		<div class="container" id="containerCardGroup">
-			<div class="row" id="cardGroup"></div>
+			<div class="row" id="cardGroup">
+				<?php foreach ($menus as $key => $value) { ?>
+					<div class="card col-lg-2 col-md-3 col-sm-6" id="<?php echo $key?>">
+						<div class="iconCard">
+							<link rel="stylesheet" href="<?php echo $url; ?>/assets/css/client/videoPlayer.css">
+							<img class="icon" src="<?php echo $url; ?>/assets/img/<?php echo $key ?>.svg" alt="<?php echo $key?>">
+						</div>
+						<h3 class="titleCard"><?php echo $key ?></h3>
+					</div>
+				<?php } ?>
+			</div>
 		</div>
+
+		<!-- <div class="container" id="containerCardGroup">
+			<div class="row" id="cardGroup"></div>
+		</div> -->
 
 	</main>
 
@@ -40,6 +55,8 @@
 
 	<script src="<?php echo $url; ?>/assets/js/site/client/index.js"></script>
 	<script src="<?php echo $url; ?>/assets/js/site/client/iconsClient.js"></script>
+	<script src="<?php echo $url; ?>/assets/js/site/videoPlayer/index.js"></script>
+	<script src="<?php echo $url; ?>/assets/js/site/videoPlayer/teste.js"></script>
 
 </body>
 

@@ -3,17 +3,33 @@
 class ClientController extends Controller
 {
 
-	public function index()
+	public function index($menus)
 	{
 
-		$this->view('site/client/index.php');
-		
+		$this->view('site/client/index.php', array(
+			"menus" => $this->apiClient($menus)
+		));
+
 	}
 
-	public function apiClient()
+	public function videos($params)
 	{
 
-		header('Content-Type: application/json; charset=UTF-8');
+		$paramsAlter = $this->apiClient($params[0]) == '' ? null : $params[0];
+
+		if (!$paramsAlter) {
+			return $this->view('site/home/index.php');
+		} 
+
+		$this->view('site/client/videos.php', array(
+			"clients" => $this->apiClient($paramsAlter),
+			"title"   => ucfirst(strval($params[0]))
+		));
+
+	}
+
+	public function apiClient($params)
+	{
 
 		$clients = array(
 			"cadastros" => array(
@@ -42,13 +58,12 @@ class ClientController extends Controller
 			)
 		);
 
-		echo json_encode($clients, JSON_PRETTY_PRINT);
-	}
+		if(!$params) {
+			return $clients;
+		}
 
-	public function dashboard()
-	{
-
-		$this->view('site/client/index.php');
+		return $clients[$params];
 		
 	}
+
 }
