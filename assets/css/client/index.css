@@ -28,10 +28,6 @@ main {
     transition: 0.4s ease-in-out;
 }
 
-img.icon {
-    fill: blue;
-}
-
 .card:hover {
     transform: translateY(-6px);
     background-color: #e70c0cc5;
