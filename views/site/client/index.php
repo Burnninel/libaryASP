@@ -28,10 +28,7 @@
 			<div class="row" id="cardGroup">
 				<?php foreach ($menus as $key => $value) { ?>
 					<div class="card col-lg-2 col-md-3 col-sm-6" id="<?php echo $key?>">
-						<div class="iconCard">
-							<link rel="stylesheet" href="<?php echo $url; ?>/assets/css/client/videoPlayer.css">
-							<img class="icon" src="<?php echo $url; ?>/assets/img/<?php echo $key ?>.svg" alt="<?php echo $key?>">
-						</div>
+						<div class="iconCard <?php echo $key?>"></div>
 						<h3 class="titleCard"><?php echo $key ?></h3>
 					</div>
 				<?php } ?>
