@@ -38,10 +38,6 @@
 			</div>
 		</div>
 
-		<!-- <div class="container" id="containerCardGroup">
-			<div class="row" id="cardGroup"></div>
-		</div> -->
-
 	</main>
 
 	<script>
@@ -55,8 +51,6 @@
 
 	<script src="<?php echo $url; ?>/assets/js/site/client/index.js"></script>
 	<script src="<?php echo $url; ?>/assets/js/site/client/iconsClient.js"></script>
-	<script src="<?php echo $url; ?>/assets/js/site/videoPlayer/index.js"></script>
-	<script src="<?php echo $url; ?>/assets/js/site/videoPlayer/teste.js"></script>
 
 </body>
 

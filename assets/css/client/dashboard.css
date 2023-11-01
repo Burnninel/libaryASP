@@ -31,8 +31,8 @@
     flex-direction: column;
     align-items: center;
     width: 100%;
-    margin: 24px 0px;
-    height: 240px;
+    margin: 16px 0px;
+    height: 280px;
     overflow-y: auto;
 }
 
