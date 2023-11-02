@@ -19,6 +19,102 @@ main {
 .card {
     width: 200px;
     padding: 20px;
+    margin: 10px 16px;
+    background-color: #fff;
+    color: #000;
+    box-shadow: 0 0 8px 0 #cac4c4;
+    border: none;
+    cursor: pointer;
+    transition: 0.4s ease-in-out;
+}
+
+.card:hover {
+    transform: translateY(-6px);
+    background-color: #e70c0cc5;
+    color: #fff;
+}
+
+.iconCard{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.icon {
+    height: 60px;
+}
+
+.titleCard {
+    font-family: 'Bebas Neue', sans-serif;
+    text-align: center;
+    margin-top: 16px;
+    font-size: 30px;
+}
+
+@media screen and (max-width: 900px) {
+    .card {
+        width: 160px;
+    }
+
+    .icon {
+        height: 48px;
+    } 
+
+    .titleCard {
+        margin-top: 12px;
+        font-size: 22px;
+    }
+
+}
+
+#comeBack {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 42px;
+    left: 48px;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    box-shadow: 0 0 6px 0 #cac4c4;
+    cursor: pointer;
+    transition: all 0.4s;
+    background-color: #fff;
+}
+
+#comeBack:hover {
+    transform: scale(1.1);
+}
+
+#iconComeBack {
+    height: 20px;
+    width: 20px;
+}
+
+
+
+/* @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f8f8f8;
+    height: 100vh;
+    width: 100%;
+}
+
+#cardGroup {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+}
+
+.card {
+    width: 200px;
+    padding: 20px;
     margin: 0px 16px;
     background-color: #fff;
     color: #000;
@@ -100,4 +196,4 @@ main {
     color: #fff;
     border: none;
     transform: translateY(-2px);
-}
+} */
