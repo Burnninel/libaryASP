@@ -16,10 +16,12 @@ $commonRoutes = array(
 	
 
 	'support'               => 'SupportController/index',
-	'support/gestao'        => 'SupportController/index',
-	'support/caixa'         => 'SupportController/index',
-	'support/loja'          => 'SupportController/index',
-	'support/extras'        => 'SupportController/index',
+	'support/videos'               => 'SupportController/videos',
+	
+	// 'support/gestao'        => 'SupportController/index',
+	// 'support/caixa'         => 'SupportController/index',
+	// 'support/loja'          => 'SupportController/index',
+	// 'support/extras'        => 'SupportController/index',
 );
 
 // rotas POST

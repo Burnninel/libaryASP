@@ -3,17 +3,33 @@
 class SupportController extends Controller
 {
 
-	public function index()
+	public function index($menus)
 	{
 
-		$this->view('site/support/index.php');
+		$this->view('site/support/index.php', array(
+			"menus" => $this->apiSupport($menus)
+		));
+
+	}
+
+	public function videos($params)
+	{
+		
+		$dinamycRouteSupport = $this->apiSupport($params[0]) == '' ? null  : $params[0];
+
+		if(!$dinamycRouteSupport) {
+			$this->view('site/support/index.php');
+		} else {
+			$this->view('site/support/videos.php', array(
+				"support" => $this->apiSupport($dinamycRouteSupport),
+				"title"   => ucfirst(strval($params[0]))
+			));
+		}
 		
 	}
 
-	public function apiSupport()
+	public function apiSupport($params)
 	{
-
-		header('Content-Type: application/json; charset=UTF-8');
 
 		$support = array(
 			"gestao" => array(
@@ -46,7 +62,12 @@ class SupportController extends Controller
 			)
 		);
 
-		echo json_encode($support, JSON_PRETTY_PRINT);
+		if(!$params) {
+			return $support;
+		}
+
+		return $support[$params];
+
 	}
 
 }
