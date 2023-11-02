@@ -20,20 +20,18 @@ function redirectComeBack() {
 
 redirectComeBack();
 
-
 function handleMenu() {
 	$('.card').click(function () {
 		let element = $(this).attr('id')
-
 		window.location.href = `http://localhost/libaryASP/support/videos/${element}`;
 	});
 };
 
-handleMenu()
+handleMenu();
 
 function generateIconMenu(elementeId, elementIcon) {
 	$(elementeId).append(elementIcon);
-}
+};
 
 var black = `<svg class="icon" id="iconBlack" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="131" height="119" viewBox="0 0 131 119">
 				<image id="Camada_1" data-name="Camada 1" x="2" y="4" width="127" height="113" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAH8AAABxCAYAAAD8t3xjAAACp0lEQVR4nO2dS5LCMAwFk6k5Rxbc/0yz4CLMKlUBEnBiyZb8ug8Atlpy/IPMkyHLcqv9sIdlewJSHe/7/c+sV79mn3Sd0YVv2fbVtPCu0FO+kvQ91v53S4KfTt+rLn5Lt1j0kI/4d7rEpLV8xB/TPDYt5SP+O01j1Eo+4stpFqsW8hF/niYx85aP+Ou4x67XUg8C4Cmfqq/HNYZUvjBe8ql6O9xiSeUL43GwY5mp3U++KrGKxcMjFhGOdPfILn1l7UfIxyDDfhtCJnNE+aNUfXis5dcObyOLr+2b+aODYV+YSPIVhvtQfaTyhUG+MMgXBvnCID8Xpss95LcnzIwf+QAAAAAAAADjMC/LzWrXKNplBavNlGjtMmsPmzzCIF8Y5AuDfGGQr8uMfGEs5fPL3GRQ+bngJg/YgHxhkC8M8oVBvjDIFwb5wiBfGOQLg3xhkC8M8oVBvjDIFwb5wiBfmB/jf4rgNk8iqPw8mP+VPfKFQb4wyBcG+cIgXxjkC4N8YZAvjId8dvmSsMrnjVaxcXlRZaSXKkZNwGELg2e+MMgXBvnCIF8Y5AvjJZ+1fgK28lnrx8StkBj2tXgqcOQLg3xhkC+Mp3xm/PW4xpDKF+ZVPsu9cXlzS+ULg3xhvC9zrBMWHifnaDJZbnWT57UzJMMzXVZGe/LnBo3Z+3yVhOgheje2ke7wlQQleoKk2tuIJL8ENo4MYbYvzJF8JmTjcOiSyhcG+cJ8ks/Qn5+PDql8Yb7Jp/rz8tVdSeWTAPkoclY67JMAeSh2deaZTwLE55SjsxM+EiAup91c2dtfv4R99hhcLsiagx2SoC/Vo7DFqd62ESSCL6aPXesjXRLBHrd5lud5/l6jSYjPNJ1Qt77McdQ5taQIsWqKcpOnNBgZkiTHcniapn90+kFUwEgVEQAAAABJRU5ErkJggg=="/>
@@ -53,7 +51,7 @@ var loja = `<svg class="icon" id="iconLoja" xmlns="http://www.w3.org/2000/svg" x
 
 var extras = `<svg class="icon" id="iconExtras" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="131" height="119" viewBox="0 0 131 119">
 				<image id="Camada_1" data-name="Camada 1" x="2" y="4" width="127" height="113" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAH8AAABxCAYAAAD8t3xjAAACsElEQVR4nO2d3VXDMAxGEw4bMAADsQkr8MwYDMcAzFCeck7aJq0TS7Ls794BWltXcvzXZp4M+ft6r/2wi2V7ElId77fvX7NevZp90nlGF75m3VfTwjtDS/lK0rdY+t8sCV4afa+6+DXNYtFCPuLvaRKTaPmI3yc8NpHyEf+c0BhFyUd8OWGxipCP+OOExMxbPuLP4x67Vks9SICnfKq+HtcYUvnCeMmn6u1wiyWVL4zHwY5lpjY/+arEKhYXj1hkONLdonfpC0s/Uj4GGfZjSJnMGeWPUvXpsZZfO7yNLL62b+aPDoZ9YTLJVxjuU/WRyhcG+cIgXxjkC4P8vjBd7iE/njQzfuQDAAAAAAAAjMP8+fFjtWuU7bKC1WZKtnaZtYdNHmGQLwzyhUG+MMjXZUa+MJby+WVuZ1D5fcFNHrAB+cIgXxjkC4N8YZAvDPKFQb4wyBcG+cIgXxjkC4N8YZAvDPKFQb4wL8b/FMFtno6g8vvB/K/skS8M8oVBvjDIFwb5wiBfGOQLg3xhPOSzy9cJi3zeaJUblxdVZnqpYtYEHLYweOYLg3xhkC8M8oVBvjBe8lnrd8BaPmv9nLgVEsO+FlcFjnxhkC8M8oXxlM+Mvx7XGFL5wtzKZ7k3LnduqXxhkC+M92WOZcLC4+QYIZPlqJs8t50hGa5psjLakj8HNGbr81USooXozdhmusNXEpTsCdLV3kYm+SWwcWQIs31h9uQzIRuHXZdUvjDIF+aRfIb+/nnokMoX5pl8qr9fnrorqXwSoD+KnJUO+yRAPxS7OvLMJwHyc8jR0QkfCZCXw27O7O0vX8I+ew5OF2TNwQ5J0JbqUdjiVG/dCBLBF9PHrvWRLolgj9s8y/M8f6vRJMRjQifU0Zc59jqnlhQpVk1ZbvKUBqOHJOljOTxN0z8EZ0JIaSI5zwAAAABJRU5ErkJggg=="/>
-			  </svg>`
+			  </svg>`;
 
 generateIconMenu('#gestaoElementIcon', black);
 generateIconMenu('#caixaElementIcon', black);
@@ -86,24 +84,6 @@ function hoverCard() {
 			});
 		}
 	);
-}
+};
 
 hoverCard();
-
-
-// function hoverCard() {
-// 	$('#gestao').hover(
-// 		function () {
-// 			$('#iconBlack').fadeOut(200, function () {
-// 				$('.gestaoElementIcon').html(gestao).fadeIn(200);
-// 			});
-// 		},
-// 		function () {
-// 			$('#iconGestao').fadeOut(200, function () {
-// 				$('.gestaoElementIcon').html(black).fadeIn(200);
-// 			});
-// 		}
-// 	);
-// }
-
-// hoverCard();
