@@ -16,6 +16,7 @@ main {
     width: 100%;
 }
 
+
 .card {
     width: 200px;
     padding: 20px;
@@ -30,8 +31,10 @@ main {
 
 .card:hover {
     transform: translateY(-6px);
-    background-color: #e70c0cc5;
+    background-color: #262525;
     color: #fff;
+    /* background-color: #e70c0cc5; */
+    /* color: #fff; */
 }
 
 .iconCard{
@@ -41,7 +44,7 @@ main {
 }
 
 .icon {
-    height: 60px;
+    height: 40px;
 }
 
 .titleCard {
@@ -64,7 +67,6 @@ main {
         margin-top: 12px;
         font-size: 22px;
     }
-
 }
 
 #comeBack {

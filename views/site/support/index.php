@@ -26,7 +26,7 @@
 			<div class="row" id="cardGroup">
 				<?php foreach ($menus as $key => $value) { ?>
 					<div class="card col-lg-2 col-md-3 col-sm-6" id="<?php echo $key?>">
-						<div class="iconCard <?php echo $key?>"></div>
+						<div class="iconCard" id="<?php echo $key?>ElementIcon"></div>
 						<h3 class="titleCard"><?php echo $key ?></h3>
 					</div>
 				<?php } ?>
