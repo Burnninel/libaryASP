@@ -9,6 +9,11 @@ main {
     width: 100%;
 }
 
+::selection {
+    color: #fff;
+    background-color: #e70c0cc5;
+}
+
 #cardGroup {
     display: flex;
     flex-direction: row;
@@ -25,6 +30,7 @@ main {
     box-shadow: 0 0 8px 0 #cac4c4;
     border: none;
     cursor: pointer;
+    user-select: none;
     transition: 0.4s ease-in-out;
 }
 

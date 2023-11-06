@@ -5,6 +5,11 @@
     font-family: 'Poppins', sans-serif;
 }
 
+::selection {
+    color: #fff;
+    background-color: #e70c0cc5;
+}
+
 #visualMedia {
     width: 680px;
     background-color: #fff;
@@ -80,18 +85,20 @@
     font-weight: 500;
     padding: 10px;
     border-bottom: 1px solid #e4e4e4;
+    user-select: #e70c0cc5;
 }
 
 .optionDropdownChat {
     display: flex;
     align-items: center;
-    text-decoration: none;
-    border: none;
-    outline: none;
-    background-color: #fff;
     width: 100%;
     height: 46px;
+    border: none;
+    outline: none;
+    user-select: none;
     padding-left: 14px;
+    background-color: #fff;
+    text-decoration: none;
 }
 
 .optionDropdownChat:hover {
