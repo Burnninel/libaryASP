@@ -14,7 +14,7 @@
 
 	<link rel="stylesheet" href="<?php echo $url; ?>/assets/css/client/index.css">
 	<link rel="stylesheet" href="<?php echo $url; ?>/assets/css/client/dashboard.css">
-	<link rel="stylesheet" href="<?php echo $url; ?>/assets/css/client/videoPlayer.css">
+	<link rel="stylesheet" href="<?php echo $url; ?>/assets/css/client/floatingButtons.css">
 
 	<title>ASP Softwares</title>
 
