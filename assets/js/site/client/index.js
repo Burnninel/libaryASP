@@ -60,7 +60,7 @@ function createBtnChat() {
 
 	$('#main').append(elementComeBack);
 
-	$('#dropdoownChat').on('click', function (e) {
+	$('#dropdownChat').on('click', function (e) {
         e.stopPropagation();
     });
 
