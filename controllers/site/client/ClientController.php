@@ -33,10 +33,10 @@ class ClientController extends Controller
 
 		$clients = array(
 			"cadastros" => array(
-				array("id" => "cliente",        "name" => "Cadastrar novo cliente"),
-				array("id" => "usuario",        "name" => "Cadastrar novo usuário"),
-				array("id" => "produto",        "name" => "Cadastrar novo produto"),
-				array("id" => "alterUnidade",   "name" => "Alterar unidade de medida"),
+				array("id" => "m9j60NkSfBg?si=LUYziFGiQgXp9rAX",   "name" => "Cadastrar novo cliente"),
+				array("id" => "PPdsRnP238U?si=5Cv-qsPZUvcwh8O7",   "name" => "Cadastrar novo usuário"),
+				array("id" => "PVvNPVxuChw?si=-3RZLQR1FaPcriWP",   "name" => "Cadastrar novo produto"),
+				array("id" => "IxSf4N7UZjI?si=lNJETxtGsDP1klRZ",   "name" => "Alterar unidade de medida"),
 				array("id" => "alterEstoque",   "name" => "Alterar estoque do produto"),
 			),
 			"financeiro" => array(
