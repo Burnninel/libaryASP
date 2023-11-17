@@ -24,7 +24,7 @@
     <main id="main">
 
         <div id="visualMedia">
-            <div id="headearClientDashboard"><?= $title ?></div>
+            <div id="headerClientDashboard"><?= $title ?></div>
             <div id="clientDashboard">
                 <?php foreach ($clients as $key => $value) { ?>
                     <div class="itemDashboard" id="<?= $value['id'] ?>"><?= $value['name'] ?></div>

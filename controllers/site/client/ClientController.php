@@ -43,6 +43,10 @@ class ClientController extends Controller
 				array("id" => "addReceb",       "name" => "Adicionar nova conta a receber"),
 				array("id" => "addPagemento",   "name" => "Adicionar nova conta a pagar"),
 				array("id" => "estornoFinanc",  "name" => "Estornar conta a receber/pagar"),
+				array("id" => "juros",          "name" => "Configurar juros por atraso"),
+				array("id" => "categoria",      "name" => "Cadastrar nova categoria"),
+				array("id" => "categoria",      "name" => "Cadastrar categoria de recebimento"),
+				array("id" => "contaBanc",      "name" => "Cadastrar conta bancaria"),
 			),
 			"fiscal" => array(
 				array("id" => "09a_hafmT3A?si=nrYUiNa6xuPOelbO",    "name" => "Nota  de saída"),
