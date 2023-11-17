@@ -14,7 +14,11 @@ createBtnComeBack();
 
 function redirectComeBack() {
 	$('#comeBack').click(function() {
-		window.location.href = 'http://localhost/libaryASP/client';
+		if($('iframe').length) {
+			location.reload();
+		} else {
+			window.location.href = 'http://localhost/libaryASP/client';
+		}
 	});
 };
 
