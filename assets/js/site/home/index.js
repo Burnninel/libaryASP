@@ -9,7 +9,7 @@ redirectToClientPage();
 function setupSupportSection() {
     var initialContentHTML = $('#template').html();
     
-    $('#support').click(function() {
+    $('#template').on('click', '#support', function() {
         $('#template').slideUp(600, function() {
             var supportValidationHTML = `
                 <h3 id="title">Seja bem-vindo!</h3>
@@ -19,13 +19,19 @@ function setupSupportSection() {
                     <button class="btnOption" id="handleSupport">Entrar</button>
                 </div>
                 <div id="exitSupport"> 
-                    <span id="textExitSupport">Não faz parte do time? <strong id="btnExitSupport">voltar<strong></span>
+                    <span id="textExitSupport">Não faz parte do time? <strong id="btnExitSupport">voltar</strong></span>
                 <div>
             `;
 
             $('#template').html(supportValidationHTML).slideDown(600);
         });
 
+    });
+
+    $('#template').on('click', '#btnExitSupport', function() {
+        $('#template').slideUp(600, function() {
+            $('#template').html(initialContentHTML).slideDown(600);
+        });
     });
 }
 
