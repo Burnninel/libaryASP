@@ -1,5 +1,5 @@
 function redirectToClientPage() {
-    $('#client').click(function() {
+    $('#template').on('click', '#client', function() {
         window.location.href = "http://localhost/libaryASP/client";
     });
 }
