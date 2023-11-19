@@ -7,6 +7,8 @@ function redirectToClientPage() {
 redirectToClientPage();
 
 function setupSupportSection() {
+    var initialContentHTML = $('#template').html();
+    
     $('#support').click(function() {
         $('#template').slideUp(600, function() {
             var supportValidationHTML = `
@@ -16,6 +18,9 @@ function setupSupportSection() {
                     <input  id="passwordSupport" type="password" placeholder="Digite sua senha..."></input>
                     <button class="btnOption" id="handleSupport">Entrar</button>
                 </div>
+                <div id="exitSupport"> 
+                    <span id="textExitSupport">Não faz parte do time? <strong id="btnExitSupport">voltar<strong></span>
+                <div>
             `;
 
             $('#template').html(supportValidationHTML).slideDown(600);

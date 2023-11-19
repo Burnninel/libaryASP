@@ -68,6 +68,33 @@
     }
 }
 
+#exitSupport {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2px;
+}
+
+#textExitSupport {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    margin: 6px 2px 0px 0px;
+    font-size: 12px;
+    font-weight: 500;
+    color: #5a5454;
+    text-transform: uppercase;
+}
+
+#btnExitSupport {
+    margin-left: 4px;
+    color: #e70c0cc5;
+    cursor: pointer;
+}
+
+#btnExitSupport:hover {
+    text-decoration: underline;
+}
+
 #title {
     text-align: center;
     height: 40px;
@@ -105,7 +132,6 @@
 .passwordError::placeholder {
     color: #e70c0cc5;
 }
-
 
 .rotated {
     transform: rotateX(360deg);

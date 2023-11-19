@@ -11,7 +11,7 @@
 	<link rel="icon" href="<?php echo $url; ?>/assets/img/asp.png" type="image/png">
 
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
-	
+
 	<link rel="stylesheet" href="<?php echo $url; ?>/assets/css/home/containerLogo.css">
 	<link rel="stylesheet" href="<?php echo $url; ?>/assets/css/home/containerTemplate.css">
 	<link rel="stylesheet" href="<?php echo $url; ?>/assets/css/home/index.css">
@@ -25,7 +25,7 @@
 	<div id="main">
 
 		<div id="containerLogo">
-			<img src="<?php echo $url; ?>/assets/img/logoAsp.png" alt="logoAsp" id="logoAsp"> 
+			<img src="<?php echo $url; ?>/assets/img/logoAsp.png" alt="logoAsp" id="logoAsp">
 			<div id="slogan">
 				<div class="textSlogan">Nos <span class="textSlogan highlightColor animateText">temos</span> a</div>
 				<div class="textSlogan"><span class="textSlogan highlightColor turnTextSecond">solucao</span> que voce</div>
